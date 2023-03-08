@@ -15,7 +15,7 @@ const ItemTask = (props) =>{
             </span>
             <input type="checkbox" onChange={()=>{markComplete(item)}} checked={checked}/>
             {
-                !checked?<input type="button" value="-" onClick={()=>deleteTask(item)}/>:<></>
+                !checked?<button onClick={()=>deleteTask(item)}>🗑</button>:<></>
             }
         </li>
     )
